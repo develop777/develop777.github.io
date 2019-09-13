@@ -1,0 +1,124 @@
+.offer{
+  position: relative;
+  padding-top: 35px;
+  @media (min-width: @desktop-width){
+    padding-top: 120px;
+  }
+}
+
+@media (min-width: @tablet-width){
+  .indicator{
+    position: absolute;
+    right: 75px;
+    top: 40px;
+
+    width: 70px;
+
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width){
+  .indicator{
+    left: 75px;
+    top: 135px;
+  }
+}
+
+
+.offer__indicator{
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: @light-green;
+}
+
+.product{
+  padding-top: 30px;
+  @media (min-width: @tablet-width){
+    width: 292px;
+  }
+  @media (min-width: @desktop-width){
+    padding-top: 55px;
+  }
+}
+
+.product__text{
+  padding-bottom: 35px;
+  @media (min-width: @desktop-width){
+    padding-bottom: 55px;
+  }
+}
+
+.product__table{
+  width: 100%;
+  margin-bottom: 25px;
+  border-collapse: collapse;
+  @media (min-width: @desktop-width){
+    margin-bottom: 85px;
+  }
+}
+
+.product__table td{
+  padding: 15px 0;
+  border-bottom: 1px solid @light-black;
+}
+
+.product__table td:first-child{
+  width: 100px;
+}
+
+.product__image{
+  width: 100%;
+  @media (min-width: @tablet-width){
+    position: absolute;
+    top: 120px;
+    right: 50px;
+    width: auto;
+    z-index: -1;
+  }
+  @media (min-width: @desktop-width){
+    top: 55px;
+  }
+}
+
+.product__price{
+  padding: 30px 0;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: @light-black;
+
+  text-align: center;
+  @media (min-width: @desktop-width){
+    font-size: 24px;
+  }
+  @media (min-width: @desktop-width){
+    padding-top: 0;
+  }
+}
+
+.button.button-order{
+  margin-bottom: 35px;
+  @media (min-width: @tablet-width){
+    margin-bottom: 52px;
+  }
+  @media (min-width: @desktop-width){
+    margin-bottom: 73px;
+  }
+}
+
+.offer__separator{
+  width: 100%;
+  height: 6px;
+  background-image: url("../img/waveGray-mobile.png");
+  @media (min-width: @tablet-width){
+    height: 17px;
+    background-image: url("../img/waveGray-tablet.png");
+  }
+  @media (min-width: @desktop-width){
+    height: 23px;
+    background-image: url("../img/waveGray-desktop.png");
+  }
+}

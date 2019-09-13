@@ -1,0 +1,95 @@
+.about{
+  padding: 30px 0;
+  @media (min-width: @tablet-width){
+    padding-bottom: 80px;
+  }
+}
+
+.advantage{
+  display: flex;
+  flex-direction: column;
+  @media (min-width: @tablet-width){
+    flex-direction: row;
+  }
+}
+
+.advantage__list{
+  display: flex;
+  flex-direction: column;
+  @media (min-width: @tablet-width){
+    &:first-child{
+      padding-right: 100px;
+    }
+  }
+  @media (min-width: @desktop-width){
+    &:first-child{
+      padding-right: 120px;
+    }
+  }
+}
+
+.advantage__list-item{
+  position: relative;
+
+  padding-top: 85px;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: @black;
+  @media (min-width: @tablet-width){
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+.advantage__list-item:before{
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 0;
+
+  background-repeat: no-repeat;
+}
+
+.advantage__list-item--first:before{
+  width: 32px;
+  height: 37px;
+
+  background-image: url("../img/icon/flower.png");
+}
+
+.advantage__list-item--second:before{
+  width: 47px;
+  height: 27px;
+
+  background-image: url("../img/icon/money.png");
+}
+
+.advantage__list-item--third:before{
+  width: 34px;
+  height: 27px;
+
+  background-image: url("../img/icon/heart.png");
+}
+
+.advantage__list-item--fourth:before{
+  width: 35px;
+  height: 34px;
+
+  background-image: url("../img/icon/circle.png");
+}
+
+.advantage__list-item--fifth:before{
+  width: 55px;
+  height: 23px;
+
+  background-image: url("../img/icon/rocket.png");
+}
+
+.advantage__list-item--sixth:before{
+  width: 33px;
+  height: 32px;
+
+  background-image: url("../img/icon/gift.png");
+}

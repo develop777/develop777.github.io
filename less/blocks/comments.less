@@ -1,0 +1,121 @@
+.comments{
+  position: relative;
+  padding-top: 30px;
+  @media(min-width: @tablet-width){
+    padding: 80px 0 125px;
+  }
+}
+
+.comments:after{
+  @media(min-width: @tablet-width){
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 357px;
+    height: 450px;
+    background-image: url("../img/comments-area.jpg");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  @media(min-width: @desktop-width){
+    left: 50px;
+  }
+}
+
+.comments__title{
+  padding-bottom: 35px;
+  @media(min-width: @tablet-width){
+    padding-bottom: 65px;
+  }
+}
+
+.slider{
+  padding-bottom: 35px;
+}
+
+.comments__text{
+  padding-bottom: 40px;
+
+  line-height: 30px;
+  color: @light-black;
+  @media(min-width: @tablet-width){
+    padding-bottom: 70px;
+  }
+}
+
+.comments__author{
+  font-size: 17px;
+  font-weight: 700;
+  color: @black;
+}
+
+.comments__author-email{
+  font-size: 17px;
+  color: @light-black;
+}
+
+.buttons{
+  display: flex;
+  margin-bottom: 35px;
+  @media(min-width: @tablet-width){
+    position: absolute;
+    right: 15px;
+    bottom: 140px;
+
+    justify-content: space-between;
+    width: 135px;
+    margin-bottom: 0;
+  }
+}
+
+.button-slider{
+  width: 50%;
+  padding: 13px 0;
+
+  border: 1px solid @gray;
+
+  cursor:  pointer;
+  @media(min-width: @tablet-width){
+    width: auto;
+    border: none;
+  }
+}
+
+.button-slider:hover,
+.button-slider:focus{
+  opacity: 0.6;
+}
+
+.button-slider:active .slider-arrow{
+  opacity: 0.3;
+}
+
+.button.comments__button{
+  margin-bottom: 55px;
+  @media(min-width: @tablet-width){
+    position: absolute;
+    top: 85px;
+    right: 50px;
+
+    width: 175px;
+  }
+}
+
+.comments__separator{
+  width: 100%;
+  height: 6px;
+  background-image: url("../img/waveGray-mobile.png");
+  @media (min-width: @tablet-width){
+    content: "";
+    position: absolute;
+    bottom: 0;
+
+    height: 17px;
+    background-image: url("../img/waveGray-tablet.png");
+  }
+  @media (min-width: @desktop-width){
+    height: 23px;
+    background-image: url("../img/waveGray-desktop.png");
+  }
+}

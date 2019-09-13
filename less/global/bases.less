@@ -1,0 +1,101 @@
+body{
+  position: relative;
+
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+
+  font-family: "OpenSans", sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 400;
+  color: @black;
+
+  background-color: @white;
+
+  z-index: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+p{
+  .indent_null();
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  padding: 0;
+}
+
+h2{
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: @black;
+  @media (min-width: @tablet-width){
+    font-size: 43px;
+    line-height: 50px;
+  }
+  @media (min-width: @desktop-width){
+    font-size: 53px;
+    line-height: 57px;
+    font-weight: 750;
+  }
+}
+
+ul{
+  .indent_null();
+  list-style: none;
+}
+
+.container{
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+  @media (min-width: @tablet-width){
+    padding: 0 50px;
+  }
+  @media (min-width: @desktop-width){
+    padding: 0 50px;
+  }
+}
+
+.wrap{
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+  @media (min-width: @tablet-width){
+    padding: 0 50px;
+  }
+  @media (min-width: @desktop-width){
+    padding: 0 50px;
+    padding-left: 225px;
+  }
+}
+
+button{
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}

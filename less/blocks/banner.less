@@ -1,0 +1,178 @@
+.banner{
+  position: relative;
+  width: 100%;
+
+  background-color: @light-gray;
+
+  text-align: center;
+}
+
+.banner__background{
+  width: 100%;
+  height: 300px;
+  background-image: url("../img/banner-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: @light-gray;
+  @media (min-width: @tablet-width){
+    height: 630px;
+    background-image: url("../img/banner-tablet.jpg");
+  }
+}
+
+.banner__title{
+  padding: 90px 30px 0;
+
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  color: @black;
+  @media (min-width: @tablet-width){
+    padding: 160px 50px 0;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+  @media (min-width: @desktop-width){
+    padding: 160px 220px 0;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.banner .container{
+  padding: 0;
+  @media (min-width: @tablet-width){
+    padding: 0 50px;
+  }
+}
+
+.goods{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  @media (min-width: @tablet-width){
+    flex-direction: row;
+  }
+}
+
+.goods__link{
+  position: relative;
+  padding: 30px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.5s;
+  @media (min-width: @tablet-width){
+    width: 50%;
+    padding: 50px;
+  }
+}
+
+.goods__link.goods__link--first:after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 40px;
+
+  width: 40px;
+  height: 67px;
+  margin-top: -30px;
+
+  background-image: url("../img/product-icon1.png");
+  background-repeat: no-repeat;
+
+  transition: all 0.5s;
+}
+
+.goods__link.goods__link--second:after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 30px;
+
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
+
+  background-image: url("../img/product-icon2.png");
+  background-repeat: no-repeat;
+
+  transition: all 0.5s;
+}
+
+.goods__link--first{
+  background-color: @light-green;
+}
+
+.goods__link--second{
+  background-color: @green;
+}
+
+.goods__link:hover,
+.goods__link:focus{
+  padding-top: 25px;
+  padding-bottom: 35px;
+  @media (min-width: @tablet-width){
+    padding-top: 45px;
+    padding-bottom: 55px;
+  }
+}
+
+.goods__link:hover.goods__link.goods__link--first:after,
+.goods__link:focus.goods__link.goods__link--first:after,
+.goods__link:hover.goods__link.goods__link--second:after,
+.goods__link:focus.goods__link.goods__link--second:after{
+  margin-top: -35px;
+}
+
+.goods__link:active.goods__link.goods__link--first:after,
+.goods__link:active.goods__link.goods__link--second:after,
+.goods__link:active .goods__title-link{
+  opacity: 0.3;
+}
+
+.goods__title{
+  width: 50%;
+}
+
+.goods__title-link{
+  font-size: 19px;
+  font-weight: 700;
+  color: @white;
+}
+
+.banner__separator{
+  @media (min-width: @tablet-width){
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 22px;
+    background-image: url("../img/wave-white.png");
+
+    z-index: 1;
+  }
+  @media (min-width: @desktop-width){
+    bottom: -18px;
+    height: 34px;
+    background-image: url("../img/waveWhite-desktop.png");
+  }
+}
+
+.inner-page .banner__background{
+  width: 100%;
+  height: 100%;
+  background-color: @light-gray;
+  background-image: none;
+}
+
+.inner-page .banner__title{
+  padding: 74px 0;
+  @media (min-width: @tablet-width){
+    padding: 105px 0 80px;
+  }
+  @media (min-width: @desktop-width){
+    padding-bottom: 100px;
+  }
+}
